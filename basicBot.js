@@ -238,7 +238,7 @@
     var basicBot = {
         version: "2.9.1",
         status: false,
-        name: "basicBot",
+        name: "SK Ocelote",
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -250,8 +250,8 @@
         settings: {
             botName: "SK Ocelote",
             language: "english",
-            chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-            scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+            chatLink: "https://rawgit.com/dec0m/mb/master/lang/en.json",
+            scriptLink: "https://rawgit.com/dec0m/mb/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 30, // 1-200
             startupVolume: 10, // 0-100
