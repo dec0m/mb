@@ -238,7 +238,7 @@
     var basicBot = {
         version: "2.9.1",
         status: false,
-        name: "SK Ocelote",
+        name: "basicBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -248,7 +248,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "SK Ocelote",
+            botName: "basicBot",
             language: "english",
             chatLink: "https://rawgit.com/dec0m/mb/master/lang/en.json",
             scriptLink: "https://rawgit.com/dec0m/mb/master/basicBot.js",
