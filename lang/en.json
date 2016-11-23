@@ -196,8 +196,11 @@
     "youtube": "\/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.",
     "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer!",
+    "odinNotClose": "\/me @%%NAME%%, odin laughs at you! Absolutely UNWORTHY!",
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
+    "odincd": "\/me @%%NAME%% Odin may try to listen to your begging in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
+    "odinWorthy": "\/me @%%NAME%% ODIN GRANTS YOU ENTRY TO VALHALA, congratulations!",
     "odinNotWorthy": "\/me @%%NAME%%, YOU ARE UNWORTHY OF THE MIGHT OF GUNGNIR!",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
 }
