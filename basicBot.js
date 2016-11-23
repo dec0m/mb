@@ -388,7 +388,8 @@
                     }, 1 * 1000, winner, pos);
                 }
             },
-            usersUsedThor: []
+            usersUsedThor: [],
+            usersUsedOdin: []
         },
         User: function (id, name) {
             this.id = id;
@@ -3347,6 +3348,77 @@
                     }
                 }
             },
+            
+            
+            odinCommand: {
+              command: 'odin',
+              rank: 'user',
+              type: 'exact',
+              functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                      if (basicBot.settings.thorCommand){
+                        var id = chat.uid,
+                              isDj = API.getDJ().id == id ? true : false,
+                              from = chat.un,
+                              djlist = API.getWaitList(),
+                              inDjList = false,
+                              oldTime = 0,
+                              usedOdin = false,
+                              indexArrUsedOdin,
+                              odinCd = false,
+                              timeInMinutes = 0,
+                              worthyAlg = Math.floor(Math.random() * 10),
+                              worthy = worthyAlg == 10 ? true : false;
+
+                          for (var i = 0; i < djlist.length; i++) {
+                              if (djlist[i].id == id)
+                                  inDjList = true;
+                          }
+
+                          if (inDjList) {
+                              for (var i = 0; i < basicBot.room.usersUsedOdin.length; i++) {
+                                  if (basicBot.room.usersUsedOdin[i].id == id) {
+                                      oldTime = basicBot.room.usersUsedOdin[i].time;
+                                      usedOdin = true;
+                                      indexArrUsedOdin = i;
+                                  }
+                              }
+
+                              if (usedOdin) {
+                                  timeInMinutes = (basicBot.settings.thorCooldown + 1) - (Math.floor((oldTime - Date.now()) * Math.pow(10, -5)) * -1);
+                                  odinCd = timeInMinutes > 0 ? true : false;
+                                  if (odinCd == false)
+                                      basicBot.room.usersUsedOdin.splice(indexArrUsedOdin, 1);
+                              }
+
+                              if (odinCd == false || usedOdin == false) {
+                                  var user = {id: id, time: Date.now()};
+                                  basicBot.room.usersUsedOdin.push(user);
+                              }
+                          }
+
+                          if (!inDjList) {
+                              return API.sendChat(subChat(basicBot.chat.odinNotClose, {name: from}));
+                          } else if (odinCd) {
+                              return API.sendChat(subChat(basicBot.chat.odincd, {name: from, time: timeInMinutes}));
+                          }
+
+                          if (worthy) {
+                            if (API.getWaitListPosition(id) != 0)
+                            basicBot.userUtilities.moveUser(id, 1, false);
+                            API.sendChat(subChat(basicBot.chat.odinWorthy, {name: from}));
+                          } else {
+                            if (API.getWaitListPosition(id) != djlist.length - 1)
+                            basicBot.userUtilities.moveUser(id, djlist.length, false);
+                            API.sendChat(subChat(basicBot.chat.odinNotWorthy, {name: from}));
+                          }
+                        }
+                    }
+                }
+            },
+
 
             timeguardCommand: {
                 command: 'timeguard',
