@@ -198,5 +198,6 @@
     "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer!",
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
+    "odinNotWorthy": "\/me @%%NAME%%, YOU ARE UNWORTHY OF THE MIGHT OF GUNGNIR!",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
 }
