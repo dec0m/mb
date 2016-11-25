@@ -21,6 +21,24 @@
         "gives you an old cookie that was left out in th rain, it's moldy. AXAXAXAXAXA",
         "bakes you fresh cookies, it smells mega ultron."
     ],
+    
+     "trusts": [
+        "SK OceBot trust analysis reading for @%%NAME%%: NO TRUST",
+        "SK OceBot trust analysis reading for @%%NAME%%: 10% trust onlee",
+        "SK OceBot trust analysis reading for @%%NAME%%: 25% trust onlee",
+        "SK OceBot trust analysis reading for @%%NAME%%: 50% trust",
+        "SK OceBot trust analysis reading for @%%NAME%%: 75% trust",
+        "SK OceBot trust analysis reading for @%%NAME%%: 100% trust! ultron!",
+        "SK OceBot trust analysis reading for @%%NAME%%: trusts"
+    ],
+     "nosens": [
+        "u need to stop nosen, fkker",
+        "stop nosen b1tchkid",
+        "pls stop nosen",
+        "u nosen",
+        "nosen",
+        "axaxaxa this nosen"
+    ],
     "molnars": [
         "HEIL MOLNAR!! http://i.imgur.com/uLthNoe.jpg",
         "MOLNAR SWAG http://i.imgur.com/PsIewSB.gifv",
@@ -65,6 +83,7 @@
     ],
     "nodatafound": "No previous data found.",
     "currentlang": "\/me Language currently set to: %%LANGUAGE%%",
+    "parrotParty": "party parrot is here http://i.imgur.com/rTu9VRO.gifv",
     "langerror": "\/me Th language you've selected isn't available. Please visit %%LINK%% to find a list of languages available.",
     "langset": "\/me Language now set to: %%LANGUAGE%%",
     "retrievingdata": "Retrieving previously stored data.",
@@ -81,6 +100,7 @@
     "isblacklisted": "\/me This track is on th %%BLACKLIST%% blacklist! Skipping...",
     "isopen": "\/me Th roulette is now open fens! pls trust! Type !join to participate! (A game where a random participant is moved to a random position in the waitlist)",
     "winnerpicked": "\/me A winner has been picked! grats fen!! @%%NAME%% to position %%POSITION%%.",
+    "legend": "\/me According to SK OceBot's analysis, ur a legend @%%NAME%%!! waaw!!",
     "ball": "\/me %%NAME%%'s question was: \"%%QUESTION%%\" and %%BOTNAME%%'s response is: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
     "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
@@ -153,7 +173,11 @@
     "commandslink": "\/me %%BOTNAME%% commands: %%LINK%%",
     "eatcookie": "\/me eats a cookie.",
     "nousercookie": "\/me who %%NAME%%? he no here...stop nosen!! how gived cookied to someone not here?",
+    "noNosen": "\/me @%%NAMEFROM%% u are nosen u know why? cuz %%NAMETO%% is no here idion",
+    "noTrust": "\/me SK OceBot cannot trust you @%%NAMEFROM%% because the name you provided for analysis (%%NAMETO%%) cannot be found",
     "selfcookie": "\/me @%%NAME%%, stop nosen!! u try to give cookie to yr self? wtf? ultron greed u, big shame on u, why u no share with othed?",
+    "selfTrust": "\/me @%%NAME%%, SK OceBot's analysis for your self trust: http://i.imgur.com/iMWRH28.png",
+    "selfNosen": "\/me @%%NAME%%, u are 100% nosen... u try asking SK OceBot if u urself are nosen? ofc u are!! b1tchkid!!",
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
     "cycleguardtime": "\/me [@%%NAME%%] Th cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
