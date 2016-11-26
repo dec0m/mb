@@ -305,6 +305,7 @@
             youtubeLink: null,
             website: null,
             molnar: "lol",
+            wtf: "lal",
             meme: "ajajaja",
             babymonkey: "axaxaxa",
             parrotParty: "http://i.imgur.com/rTu9VRO.gifv",
