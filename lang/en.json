@@ -23,13 +23,13 @@
     ],
     
      "trusts": [
-        "SK OceBot trust analysis reading for @%%NAMETO%%: NO TRUST",
-        "SK OceBot trust analysis reading for @%%NAMETO%%: 10% trust onlee",
-        "SK OceBot trust analysis reading for @%%NAMETO%%: 25% trust onlee",
-        "SK OceBot trust analysis reading for @%%NAMETO%%: 50% trust",
-        "SK OceBot trust analysis reading for @%%NAMETO%%: 75% trust",
-        "SK OceBot trust analysis reading for @%%NAMETO%%: 100% trust! ultron!",
-        "SK OceBot trust analysis reading for @%%NAMETO%%: trusts"
+        ", your trust analysis reading according to SK OceBot is: NO TRUST",
+        ", your trust analysis reading according to SK OceBot is: 10% trust onlee",
+        ", your trust analysis reading according to SK OceBot is: 25% trust onlee",
+        ", your trust analysis reading according to SK OceBot is: 50% trust",
+        ", your trust analysis reading according to SK OceBot is: 75% trust",
+        ", your trust analysis reading according to SK OceBot is: 100% trust! ultron!",
+        ", your trust analysis reading according to SK OceBot is: trusting"
     ],
      "nosens": [
         "u need to stop nosen, fkker",
@@ -180,7 +180,7 @@
     "selfTrust": "\/me @%%NAME%%, SK OceBot's analysis for your self trust: http://i.imgur.com/iMWRH28.png",
     "selfNosen": "\/me @%%NAME%%, u are 100% nosen... u try asking SK OceBot if u urself are nosen? ofc u are!! b1tchkid!!",
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
-    "trust": "\/me @%%NAMETO%%, %%NAMEFROM%% %%TRUST%%",
+    "trust": "\/me @%%NAMETO%% %%TRUST%%",
     "molnar": "\/me %%MOLNARZZ%%",
     "cycleguardtime": "\/me [@%%NAME%%] Th cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
