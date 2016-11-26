@@ -181,6 +181,7 @@
     "selfNosen": "\/me @%%NAME%%, u are 100% nosen... u try asking SK OceBot if u urself are nosen? ofc u are!! b1tchkid!!",
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
     "trust": "\/me @%%NAMETO%%, %%NAMEFROM%% %%TRUST%%",
+    "molnar": "\/me %%MOLNARZZ%%",
     "cycleguardtime": "\/me [@%%NAME%%] Th cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "\/me Emoji list: %%LINK%%",
