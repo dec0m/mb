@@ -1850,7 +1850,6 @@
                     }
                 }
             },
-
             botnameCommand: {
                 command: 'botname',
                 rank: 'manager',
@@ -1869,7 +1868,6 @@
                     }
                 }
             },
-
             clearchatCommand: {
                 command: 'clearchat',
                 rank: 'manager',
@@ -1886,7 +1884,6 @@
                     }
                 }
             },
-
             clearlocalstorageCommand: {
                 command: 'clearlocalstorage',
                 rank: 'manager',
@@ -1900,7 +1897,6 @@
                     }
                 }
             },
-
             cmddeletionCommand: {
                 command: ['commanddeletion', 'cmddeletion', 'cmddel'],
                 rank: 'mod',
@@ -1920,7 +1916,6 @@
                     }
                 }
             },
-
             commandsCommand: {
                 command: 'commands',
                 rank: 'user',
@@ -1933,7 +1928,6 @@
                     }
                 }
             },
-
             cookieCommand: {
                 command: 'cookie',
                 rank: 'user',
@@ -1975,8 +1969,8 @@
                 rank: 'user',
                 type: 'startsWith',
                 getTrust: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.trusts.length);
-                    return basicBot.chat.trusts[c];
+                    var t = Math.floor(Math.random() * basicBot.chat.trusts.length);
+                    return basicBot.chat.trusts[t];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2005,13 +1999,14 @@
                     }
                 }
             },
+            
              nosenCommand: {
-                command: 'cookie',
+                command: 'nosen',
                 rank: 'user',
                 type: 'startsWith',
-                getCookie: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.cookies.length);
-                    return basicBot.chat.cookies[c];
+                getNosen: function (chat) {
+                    var n = Math.floor(Math.random() * basicBot.chat.nosens.length);
+                    return basicBot.chat.nosens[n];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2021,20 +2016,20 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eatcookie);
+                            API.sendChat(basicBot.chat.eatnosen);
                             return false;
                         }
                         else {
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
                             if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nousercookie, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.noNosen, {name: name}));
                             }
                             else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.selfNosen, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                                return API.sendChat(subChat(basicBot.chat.nosen, {nameto: user.username, namefrom: chat.un, nosen: this.getNosen()}));
                             }
                         }
                     }
@@ -3777,8 +3772,8 @@
                 rank: 'user',
                 type: 'exact',
                 getMolnar: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.molnars.length);
-                    return basicBot.chat.molnars[c]; 
+                    var m = Math.floor(Math.random() * basicBot.chat.molnars.length);
+                    return basicBot.chat.molnars[m]; 
                  },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
