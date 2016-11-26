@@ -83,7 +83,7 @@
     ],
     "nodatafound": "No previous data found.",
     "currentlang": "\/me Language currently set to: %%LANGUAGE%%",
-    "parrotParty": "party parrot is here http://i.imgur.com/rTu9VRO.gifv",
+    "parrotParty": "party parrot is here %%LINK%%",
     "langerror": "\/me Th language you've selected isn't available. Please visit %%LINK%% to find a list of languages available.",
     "langset": "\/me Language now set to: %%LANGUAGE%%",
     "retrievingdata": "Retrieving previously stored data.",
