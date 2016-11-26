@@ -174,7 +174,7 @@
     "eatcookie": "\/me eats a cookie.",
     "nousercookie": "\/me who %%NAME%%? he no here...stop nosen!! how gived cookied to someone not here?",
     "noNosen": "\/me @%%NAMEFROM%% u are nosen u know why? cuz %%NAMETO%% is no here idion",
-    "noTrust": "\/me SK OceBot cannot trust you @%%NAMEFROM%% because the name you provided for analysis (%%NAMETO%%) cannot be found",
+    "noTrust": "\/me SK OceBot cannot analyze the trust of %%NAME%% as this person is not here",
     "selfcookie": "\/me @%%NAME%%, stop nosen!! u try to give cookie to yr self? wtf? ultron greed u, big shame on u, why u no share with othed?",
     "selfTrust": "\/me @%%NAME%%, SK OceBot's analysis for your self trust: http://i.imgur.com/iMWRH28.png",
     "selfNosen": "\/me @%%NAME%%, u are 100% nosen... u try asking SK OceBot if u urself are nosen? ofc u are!! b1tchkid!!",
