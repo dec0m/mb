@@ -305,6 +305,8 @@
             youtubeLink: null,
             website: null,
             molnar: "lol",
+            meme: "ajajaja",
+            babymonkey: "axaxaxa",
             parrotParty: "http://i.imgur.com/rTu9VRO.gifv",
             intervalMessages: [],
             messageInterval: 5,
@@ -3781,6 +3783,41 @@
                     else {
                         if (typeof basicBot.settings.molnar === "string")
                             API.sendChat(subChat(basicBot.chat.molnar, {molnarzz: this.getMolnar()}));
+                    }
+                }
+            },
+              memeCommand: {
+                command: 'meme',
+                rank: 'user',
+                type: 'exact',
+                getMeme: function (chat) {
+                    var mm = Math.floor(Math.random() * basicBot.chat.memes.length);
+                    return basicBot.chat.molnars[mm]; 
+                 },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof basicBot.settings.meme === "string")
+                            API.sendChat(subChat(basicBot.chat.meme, {maymay: this.getMeme()}));
+                    }
+                }
+            },
+            
+             babymonkeyCommand: {
+                command: 'babymonkey',
+                rank: 'user',
+                type: 'exact',
+                getMonkey: function (chat) {
+                    var bm = Math.floor(Math.random() * basicBot.chat.babymonkeys.length);
+                    return basicBot.chat.molnars[bm]; 
+                 },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof basicBot.settings.babymonkey === "string")
+                            API.sendChat(subChat(basicBot.chat.babymonkey, {mankeyzz: this.getMonkey()}));
                     }
                 }
             },
