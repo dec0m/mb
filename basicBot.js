@@ -3792,7 +3792,7 @@
                 type: 'exact',
                 getMeme: function (chat) {
                     var mm = Math.floor(Math.random() * basicBot.chat.memes.length);
-                    return basicBot.chat.molnars[mm]; 
+                    return basicBot.chat.memes[mm]; 
                  },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
