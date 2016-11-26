@@ -1949,7 +1949,7 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eattrust);
+                            API.sendChat(basicBot.chat.eatcookie);
                             return false;
                         }
                         else {
@@ -1985,7 +1985,7 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eatcookie);
+                            API.sendChat(basicBot.chat.eattrust);
                             return false;
                         }
                         else {
