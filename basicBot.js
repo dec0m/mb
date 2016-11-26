@@ -304,6 +304,7 @@
             fbLink: null,
             youtubeLink: null,
             website: null,
+            molnar: "lol",
             parrotParty: "http://i.imgur.com/rTu9VRO.gifv",
             intervalMessages: [],
             messageInterval: 5,
