@@ -1993,7 +1993,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfTrust, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.trust, {nameto: user.username, namefrom: chat.un, trust: this.getTrust}));
+                                return API.sendChat(subChat(basicBot.chat.trust, {nameto: user.username, trust: this.getTrust}));
                             }
                         }
                     }
