@@ -211,6 +211,8 @@
     "trust": "\/me @%%NAMETO%% %%TRUST%%",
     "nosen": "\/me  hey @%%NAMETO%%, %%NOSEN%%",
     "molnar": "\/me %%MOLNARZZ%%",
+    "meme": "\/me %%MAYMAY%%",
+    "babymonkey": "\/me %%MANKEYZZ%%",
     "cycleguardtime": "\/me [@%%NAME%%] Th cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "\/me Emoji list: %%LINK%%",
