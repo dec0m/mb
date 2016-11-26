@@ -3810,7 +3810,7 @@
                 type: 'exact',
                 getMonkey: function (chat) {
                     var bm = Math.floor(Math.random() * basicBot.chat.babymonkeys.length);
-                    return basicBot.chat.molnars[bm]; 
+                    return basicBot.chat.babymonkeys[bm]; 
                  },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
