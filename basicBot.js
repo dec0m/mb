@@ -304,7 +304,7 @@
             fbLink: null,
             youtubeLink: null,
             website: null,
-            parrotParty: true,
+            parrotParty: "http://i.imgur.com/rTu9VRO.gifv",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -3771,7 +3771,25 @@
                 }
             },
             
-            parrotPartyCommand: {
+             molnarCommand: {
+                command: 'molnar',
+                rank: 'user',
+                type: 'exact',
+                getMolnar: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.molnars.length);
+                    return basicBot.chat.molnars[c]; 
+                 },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof basicBot.settings.molnar === "string")
+                            API.sendChat(subChat(basicBot.chat.molnar, {molnarzz: this.getMolnar()}));
+                    }
+                }
+            },
+            
+            parrotCommand: {
                 command: 'parrot',
                 rank: 'user',
                 type: 'exact',
