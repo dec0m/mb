@@ -23,13 +23,13 @@
     ],
     
      "trusts": [
-        "SK OceBot trust analysis reading for @%%NAME%%: NO TRUST",
-        "SK OceBot trust analysis reading for @%%NAME%%: 10% trust onlee",
-        "SK OceBot trust analysis reading for @%%NAME%%: 25% trust onlee",
-        "SK OceBot trust analysis reading for @%%NAME%%: 50% trust",
-        "SK OceBot trust analysis reading for @%%NAME%%: 75% trust",
-        "SK OceBot trust analysis reading for @%%NAME%%: 100% trust! ultron!",
-        "SK OceBot trust analysis reading for @%%NAME%%: trusts"
+        "SK OceBot trust analysis reading for @%%NAMETO%%: NO TRUST",
+        "SK OceBot trust analysis reading for @%%NAMETO%%: 10% trust onlee",
+        "SK OceBot trust analysis reading for @%%NAMETO%%: 25% trust onlee",
+        "SK OceBot trust analysis reading for @%%NAMETO%%: 50% trust",
+        "SK OceBot trust analysis reading for @%%NAMETO%%: 75% trust",
+        "SK OceBot trust analysis reading for @%%NAMETO%%: 100% trust! ultron!",
+        "SK OceBot trust analysis reading for @%%NAMETO%%: trusts"
     ],
      "nosens": [
         "u need to stop nosen, fkker",
