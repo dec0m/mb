@@ -3804,6 +3804,24 @@
                 }
             },
             
+             wtfCommand: {
+                command: 'wtf',
+                rank: 'user',
+                type: 'exact',
+                getWTF: function (chat) {
+                    var w = Math.floor(Math.random() * basicBot.chat.WTF.length);
+                    return basicBot.chat.WTF[w]; 
+                 },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof basicBot.settings.wtf === "string")
+                            API.sendChat(subChat(basicBot.chat.wtf, {wat: this.getWTF()}));
+                    }
+                }
+            },
+            
              babymonkeyCommand: {
                 command: 'babymonkey',
                 rank: 'user',
