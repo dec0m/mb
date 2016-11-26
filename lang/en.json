@@ -172,6 +172,7 @@
     "deletechat": "\/me [@%%NAME%%] Cleared th chat of %%USERNAME%%.",
     "commandslink": "\/me %%BOTNAME%% commands: %%LINK%%",
     "eatcookie": "\/me eats a cookie.",
+    "eattrust": "\/me SK OceBot needs a name of the person you require trust analysis from. Please specify.",
     "nousercookie": "\/me who %%NAME%%? he no here...stop nosen!! how gived cookied to someone not here?",
     "noNosen": "\/me @%%NAMEFROM%% u are nosen u know why? cuz %%NAMETO%% is no here idion",
     "noTrust": "\/me SK OceBot cannot analyze the trust of %%NAME%% as this person is not here",
