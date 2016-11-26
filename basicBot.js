@@ -1967,6 +1967,7 @@
                     }
                 }
             },
+            
              trustCommand: {
                 command: 'trust',
                 rank: 'user',
@@ -1990,13 +1991,13 @@
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
                             if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.noTrust, {nameto: user.username, namefrom: chat.un}));
+                                return API.sendChat(subChat(basicBot.chat.noTrust, {name: name}));
                             }
                             else if (user.username === chat.un) {
                                 return API.sendChat(subChat(basicBot.chat.selfTrust, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.trust, {name: name, trust: this.getTrust()}));
+                                return API.sendChat(subChat(basicBot.chat.trust, {nameto: user.username, namefrom: chat.un, trust: this.getTrust}));
                             }
                         }
                     }
