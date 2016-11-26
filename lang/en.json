@@ -179,6 +179,7 @@
     "selfTrust": "\/me @%%NAME%%, SK OceBot's analysis for your self trust: http://i.imgur.com/iMWRH28.png",
     "selfNosen": "\/me @%%NAME%%, u are 100% nosen... u try asking SK OceBot if u urself are nosen? ofc u are!! b1tchkid!!",
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
+    "trust": "\/me @%%NAMETO%%, %%NAMEFROM%% %%TRUST%%",
     "cycleguardtime": "\/me [@%%NAME%%] Th cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "\/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "\/me Emoji list: %%LINK%%",
