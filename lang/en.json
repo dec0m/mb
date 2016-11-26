@@ -197,7 +197,7 @@
     "bouncerplusrank": "\/me [@%%NAME%%] You have to be manager or up to enable Bouncer+.",
     "chatcleared": "\/me [@%%NAME%%] Cleared th chat.",
     "deletechat": "\/me [@%%NAME%%] Cleared th chat of %%USERNAME%%.",
-    "commandslink": "\/me %%BOTNAME%% commands: %%LINK%%",
+    "commandslink": "\/me original %%BOTNAME%% commands: %%LINK%% - new commands: !molnar, !odin, !thor, !trust, !nosen, !babymonkey, !meme, and !parrot",
     "eatcookie": "\/me eats a cookie.",
     "eatnosen": "\/me who u want me to stop their nosen? gimmie name pls",
     "eattrust": "\/me SK OceBot needs a name of the person you require trust analysis from. Please specify.",
