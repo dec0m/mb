@@ -304,6 +304,7 @@
             fbLink: null,
             youtubeLink: null,
             website: null,
+            parrotParty: true,
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -3766,6 +3767,20 @@
                     else {
                         if (typeof basicBot.settings.website === "string")
                             API.sendChat(subChat(basicBot.chat.website, {link: basicBot.settings.website}));
+                    }
+                }
+            },
+            
+            parrotPartyCommand: {
+                command: 'parrot',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof basicBot.settings.parrotParty === "string")
+                            API.sendChat(subChat(basicBot.chat.parrotParty, {link: basicBot.settings.parrotParty}));
                     }
                 }
             },
