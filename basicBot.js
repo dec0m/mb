@@ -3430,11 +3430,17 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                       if (basicBot.settings.thorCommand){
-                        var id = chat.uid,
-                              isDj = API.getDJ().id == id ? true : false,
+                        var msg = chat.message;
+                          var id = chat.uid,
+                            if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.noOdin, {name: chat.un}));
+                            var pwned = msg.substring(cmd.length + 2);
+                        var user = basicBot.userUtilities.lookupUserName(pwned);
+                        if (user === false) return API.sendChat(subChat(basicBot.chat.whoOdin, {name: pwned}));
+                             isDj = API.getDJ().id == id ? true : false,
                               from = chat.un,
                               djlist = API.getWaitList(),
                               inDjList = false,
+                                  inDjListTwo = false,
                               oldTime = 0,
                               usedOdin = false,
                               indexArrUsedOdin,
@@ -3444,9 +3450,15 @@
                               worthy = worthyAlg == 10 ? true : false;
 
                           for (var i = 0; i < djlist.length; i++) {
-                              if (djlist[i].id == id)
+                              if (djlist[i].id == pwned)
                                   inDjList = true;
                           }
+                          
+                           for (var i = 0; i < djlist.length; i++) {
+                              if (djlist[i].id == id)
+                                  inDjListTwo = true;
+                          }
+
 
                           if (inDjList) {
                               for (var i = 0; i < basicBot.room.usersUsedOdin.length; i++) {
@@ -3466,19 +3478,24 @@
 
                               if (odinCd == false || usedOdin == false) {
                                   var user = {id: id, time: Date.now()};
-                                  basicBot.room.usersUsedOdin.push(user);
+                                  basicBot.room.usersUsedOdin.push(id);
                               }
                           }
 
-                          if (!inDjList) {
+                          if (!inDjListTwo) {
                               return API.sendChat(subChat(basicBot.chat.odinNotClose, {name: from}));
-                          } else if (odinCd) {
+                          }else  if (!inDjList) {
+                              return API.sendChat(subChat(basicBot.chat.odinNotPossible, {name: pwned}));
+                          }
+                          
+                          
+                          else if (odinCd) {
                               return API.sendChat(subChat(basicBot.chat.odincd, {name: from, time: timeInMinutes}));
                           }
 
                           if (worthy) {
-                            if (API.getWaitListPosition(id) != 0)
-                            basicBot.userUtilities.moveUser(id, 1, false);
+                            if (API.getWaitListPosition(pwned) != 0)
+                            basicBot.userUtilities.moveUser(pwned, djlist.length, false);
                             API.sendChat(subChat(basicBot.chat.odinWorthy, {name: from}));
                           } else {
                             if (API.getWaitListPosition(id) != djlist.length - 1)
