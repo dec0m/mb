@@ -3430,12 +3430,9 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                       if (basicBot.settings.thorCommand){
-                        var msg = chat.message;
+                   
                           var id = chat.uid,
-                            if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.noOdin, {name: chat.un}));
-                            var pwned = msg.substring(cmd.length + 2);
-                        var user = basicBot.userUtilities.lookupUserName(pwned);
-                        if (user === false) return API.sendChat(subChat(basicBot.chat.whoOdin, {name: pwned}));
+                     
                              isDj = API.getDJ().id == id ? true : false,
                               from = chat.un,
                               djlist = API.getWaitList(),
@@ -3448,6 +3445,11 @@
                               timeInMinutes = 0,
                               worthyAlg = Math.floor(Math.random() * 10),
                               worthy = worthyAlg == 10 ? true : false;
+                           var msg = chat.message;
+                             if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.noOdin, {name: chat.un}));
+                            var pwned = msg.substring(cmd.length + 2);
+                        var user = basicBot.userUtilities.lookupUserName(pwned);
+                        if (user === false) return API.sendChat(subChat(basicBot.chat.whoOdin, {name: pwned}));
 
                           for (var i = 0; i < djlist.length; i++) {
                               if (djlist[i].id == pwned)
