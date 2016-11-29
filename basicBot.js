@@ -3484,9 +3484,7 @@
                               }
                           }
 
-                          if (!inDjListTwo) {
-                              return API.sendChat(subChat(basicBot.chat.odinNotClose, {name: from}));
-                          }else  if (!inDjList) {
+                           if (!inDjList) {
                               return API.sendChat(subChat(basicBot.chat.odinNotPossible, {name: pwned}));
                           }
                           
