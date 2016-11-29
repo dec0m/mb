@@ -404,7 +404,7 @@
     "thorWorthy": "\/me @%%NAME%% you're worthy of th hammer :hammer:, congratulations!",
     "odinWorthy": "\/me @%%NAME%% ODIN SEES YOU AS WORTHY, AND ALLOWS YOU ACCESS TO HIS WEAPON GUNGNIR! congratulations!",
     "noOdin": "\/me You need a target first in order to use Gungnir.",
-    "whoOdin": "\/me WHO? THAT PERSON IS NOT HERE.",
+    "whoOdin": "\/me WHO? %%NAME%% IS NOT HERE. YOU DISAPPOINT ODIN.",
     "odinNotWorthy": "\/me @%%NAME%%, YOU ARE UNWORTHY OF TH MIGHT OF GUNGNIR! http://vocaroo.com/i/s1aKwhMdoKMT",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of th hammer."
 }
