@@ -3483,8 +3483,9 @@
                                   basicBot.room.usersUsedOdin.push(id);
                               }
                           }
-
-                           if (!inDjList) {
+                          if (!inDjListTwo) {
+                              return API.sendChat(subChat(basicBot.chat.odinNotClose, {name: from}));
+                          }else if (!inDjList) {
                               return API.sendChat(subChat(basicBot.chat.odinNotPossible, {name: pwned}));
                           }
                           
