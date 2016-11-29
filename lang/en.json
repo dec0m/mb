@@ -397,11 +397,14 @@
     "youtube": "\/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.",
     "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to th hammer!",
-    "odinNotClose": "\/me @%%NAME%%, odin laughs at you! Absolutely UNWORTHY! https://hydra-media.cursecdn.com/smite.gamepedia.com/6/67/Vox_God_Odin_Laugh_a.ogg",
+    "odinNotClose": "\/me @%%NAME%%, odin laughs at you! You dare to yield gungnir while not in the waitlist yourself? Absolutely UNWORTHY! https://hydra-media.cursecdn.com/smite.gamepedia.com/6/67/Vox_God_Odin_Laugh_a.ogg",
+    "odinNotPossible": "\/me  @%%NAME%% is immune to the effects of Gungnir as this person is not in the waitlist. COWARD! HAHAHA",
     "thorcd": "\/me @%%NAME%% you can try to lift th hammer in %%TIME%% minutes. https://hydra-media.cursecdn.com/smite.gamepedia.com/c/ce/Thor_Kill_Streak_2.ogg",
     "odincd": "\/me @%%NAME%% Odin may try to listen to your begging in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of th hammer :hammer:, congratulations!",
-    "odinWorthy": "\/me @%%NAME%% ODIN GRANTS YOU ENTRY TO VALHALA, congratulations!",
+    "odinWorthy": "\/me @%%NAME%% ODIN SEES YOU AS WORTHY, AND ALLOWS YOU ACCESS TO HIS WEAPON GUNGNIR! congratulations!",
+    "noOdin": "\/me You need a target first in order to use Gungnir.",
+    "whoOdin": "\/me WHO? THAT PERSON IS NOT HERE.",
     "odinNotWorthy": "\/me @%%NAME%%, YOU ARE UNWORTHY OF TH MIGHT OF GUNGNIR! http://vocaroo.com/i/s1aKwhMdoKMT",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of th hammer."
 }
