@@ -3437,7 +3437,7 @@
                               from = chat.un,
                               djlist = API.getWaitList(),
                               inDjList = false,
-                                  inDjListTwo = false,
+                              inDjListTwo = false,
                               oldTime = 0,
                               usedOdin = false,
                               indexArrUsedOdin,
