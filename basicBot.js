@@ -3371,7 +3371,7 @@
                               thorCd = false,
                               timeInMinutes = 0,
                               worthyAlg = Math.floor(Math.random() * 10),
-                              worthy = worthyAlg == 10 ? true : false;
+                              worthy = worthyAlg == 9 ? true : false;
 
                           for (var i = 0; i < djlist.length; i++) {
                               if (djlist[i].id == id)
@@ -3444,7 +3444,7 @@
                               odinCd = false,
                               timeInMinutes = 0,
                               worthyAlg = Math.floor(Math.random() * 10),
-                              worthy = worthyAlg == 10 ? true : false;
+                              worthy = worthyAlg == 9 ? true : false;
                            var msg = chat.message;
                              if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.noOdin, {name: chat.un}));
                             var pwned = msg.substring(cmd.length + 2);
