@@ -3451,12 +3451,12 @@
                         var userR = basicBot.userUtilities.lookupUserName(pwned);
                         if (userR === false) return API.sendChat(subChat(basicBot.chat.whoOdin, {name: pwned}));
 
-                          for (var i = 0; i <= djlist.length; i++) {
+                          for (var i = 0; i < djlist.length; i++) {
                               if (djlist[i].id == userR)
                                   inDjList = true;
                           }
                           
-                           for (var i = 0; i <= djlist.length; i++) {
+                           for (var i = 0; i < djlist.length; i++) {
                               if (djlist[i].id == id)
                                   inDjListTwo = true;
                           }
