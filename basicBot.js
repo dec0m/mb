@@ -3456,10 +3456,7 @@
                                   inDjList = true;
                           }
                           
-                           for (var i = 0; i < djlist.length; i++) {
-                              if (djlist[i].id == id)
-                                  inDjListTwo = true;
-                          }
+                        
 
 
                           if (inDjList) {
@@ -3483,9 +3480,8 @@
                                   basicBot.room.usersUsedOdin.push(user);
                               }
                           }
-                          if (!inDjListTwo) {
-                              return API.sendChat(subChat(basicBot.chat.odinNotClose, {name: from}));
-                          }else if (!inDjList) {
+                          
+                          if (!inDjList) {
                               return API.sendChat(subChat(basicBot.chat.odinNotPossible, {name: pwned}));
                           }                          
                           else if (odinCd) {
