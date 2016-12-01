@@ -394,7 +394,8 @@
                 }
             },
             usersUsedThor: [],
-            usersUsedOdin: []
+            usersUsedOdin: [],
+            usersUsedLoki: []
         },
         User: function (id, name) {
             this.id = id;
@@ -3502,6 +3503,94 @@
                             if (API.getWaitListPosition(id) != djlist.length - 1)
                             basicBot.userUtilities.moveUser(id, djlist.length, false);
                             API.sendChat(subChat(basicBot.chat.odinNotWorthy, {name: from}));
+                          }
+                        }
+                    }
+                }
+            },
+            
+               lokiCommand: {
+              command: 'loki',
+              rank: 'user',
+              type: 'startsWith',
+              functionality: function (chat, cmd) {
+                    
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                      if (basicBot.settings.thorCommand){
+                   
+                          var id = chat.uid,
+                     
+                             isDj = API.getDJ().id == id ? true : false,
+                              from = chat.un,
+                              djlist = API.getWaitList(),
+                              inDjList = false,
+                              inDjListTwo = false,
+                              oldTime = 0,
+                              usedLoki = false,
+                              indexArrUsedLoki,
+                              lokiCd = false,
+                              timeInMinutes = 0,
+                              worthyAlg = Math.floor(Math.random() * 10),
+                              worthy = worthyAlg == 9 ? true : false;
+                           var msg = chat.message;
+                             if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.noLoki, {name: chat.un}));
+                            var pwned = msg.substring(cmd.length + 2);
+                        var userR = basicBot.userUtilities.lookupUserName(pwned);
+                        if (userR === false) return API.sendChat(subChat(basicBot.chat.whoLoki, {name: pwned}));
+
+                          for (var i = 0; i < djlist.length; i++) {
+                              if (djlist[i].id == userR.id)
+                                  inDjList = true;
+                          }
+                          
+                        for (var i = 0; i < djlist.length; i++) {
+                              if (djlist[i].id == id)
+                                  inDjListTwo = true;
+                          }    
+                        
+
+
+                          if (inDjList) {
+                              for (var i = 0; i < basicBot.room.usersUsedLoki.length; i++) {
+                                  if (basicBot.room.usersUsedLoki[i].id == id) {
+                                      oldTime = basicBot.room.usersUsedLoki[i].time;
+                                      usedLoki = true;
+                                      indexArrUsedLoki = i;
+                                  }
+                              }
+
+                              if (usedLoki) {
+                                  timeInMinutes = (basicBot.settings.thorCooldown + 1) - (Math.floor((oldTime - Date.now()) * Math.pow(10, -5)) * -1);
+                                  lokiCd = timeInMinutes > 0 ? true : false;
+                                  if (lokiCd == false)
+                                      basicBot.room.usersUsedLoki.splice(indexArrUsedLoki, 1);
+                              }
+
+                              if (lokiCd == false || usedLoki == false) {
+                                  var user = {id: id, time: Date.now()};
+                                  basicBot.room.usersUsedLoki.push(user);
+                              }
+                          }
+                          
+                         if (!inDjListTwo && !isDj) {
+                              return API.sendChat(subChat(basicBot.chat.lokiNotClose, {name: from}));
+                          }else if (!inDjList) {
+                              return API.sendChat(subChat(basicBot.chat.lokiNotPossible, {name: pwned}));
+                          }                          
+                          else if (lokiCd) {
+                              return API.sendChat(subChat(basicBot.chat.lokicd, {name: from, time: timeInMinutes}));
+                          }
+
+                          if (worthy) {
+                            if (API.getWaitListPosition(userR.id) != 0)
+                            API.moderateRemoveDJ(userR.id);
+                            API.sendChat(subChat(basicBot.chat.lokiWorthy, {name: from, nameto: pwned}));
+                          } else {
+                            if (API.getWaitListPosition(id) != djlist.length - 1)
+                            API.moderateRemoveDJ(id);
+                            API.moderateForceSkip(id);
+                            API.sendChat(subChat(basicBot.chat.lokiNotWorthy, {name: from}));
                           }
                         }
                     }
