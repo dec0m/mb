@@ -3424,7 +3424,7 @@
             odinCommand: {
               command: 'odin',
               rank: 'user',
-              type: 'exact',
+              type: 'startsWith',
               functionality: function (chat, cmd) {
                     
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
