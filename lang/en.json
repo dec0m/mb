@@ -408,13 +408,13 @@
     "odincd": "\/me @%%NAME%% Odin may try to listen to your begging in %%TIME%% minutes.",
     "lokicd": "\/me @%%NAME%% Loki appears infront of you and stares you in the eye! Loki then laughs and vanishes! He may re-appear again to you in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of th hammer :hammer:, congratulations!",
-    "lokiWorthy": "\/me @%%NAME%% loki is amused by your trick request! Loki plays a trick on an unsuspecting @%%NAMET%%!",
+    "lokiWorthy": "\/me @%%NAME%% loki is amused by your trick request! Loki plays a trick on an unsuspecting @%%NAMET%%! and removes that person from the waitlist",
     "odinWorthy": "\/me @%%NAME%% ODIN SEES YOU AS WORTHY, AND ALLOWS YOU ACCESS TO HIS WEAPON GUNGNIR! congratulations!",
     "noOdin": "\/me You need a target first in order to use Gungnir.",
     "noLoki": "\/me You need to give Loki a name if you wish for Loki to play a trick on that person",
     "whoOdin": "\/me WHO? %%NAME%% IS NOT HERE. YOU DISAPPOINT ODIN.",
     "whoLoki": "\/me Are you trying to play a trick on Loki? %%NAME%% is not here.",
     "odinNotWorthy": "\/me @%%NAME%%, YOU ARE UNWORTHY OF TH MIGHT OF GUNGNIR! http://vocaroo.com/i/s1aKwhMdoKMT",
-    "lokiNotWorthy": "\/me @%%NAME%% Loki decided to play a trick on YOU instead! Hahahaha!",
+    "lokiNotWorthy": "\/me @%%NAME%% Loki decided to play a trick on YOU instead and removes you from the waitlist! Hahahaha!",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of th hammer."
 }
