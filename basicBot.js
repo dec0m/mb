@@ -3448,12 +3448,11 @@
                            var msg = chat.message;
                              if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.noOdin, {name: chat.un}));
                             var pwned = msg.substring(cmd.length + 2);
-                        var userRR = basicBot.userUtilities.lookupUserName(pwned);
-                          var userR = basicBot.userUtilities.lookupUser(pwned);
-                        if (userRR === false) return API.sendChat(subChat(basicBot.chat.whoOdin, {name: pwned}));
+                        var userR = basicBot.userUtilities.lookupUserName(pwned);
+                        if (userR === false) return API.sendChat(subChat(basicBot.chat.whoOdin, {name: pwned}));
 
                           for (var i = 0; i < djlist.length; i++) {
-                              if (djlist[i].id == userR)
+                              if (djlist[i].id == userR.id)
                                   inDjList = true;
                           }
                           
@@ -3496,7 +3495,7 @@
                           }
 
                           if (worthy) {
-                            if (API.getWaitListPosition(userR) != 0)
+                            if (API.getWaitListPosition(userR.id) != 0)
                             basicBot.userUtilities.moveUser(userR, djlist.length, false);
                             API.sendChat(subChat(basicBot.chat.odinWorthy, {name: from}));
                           } else {
