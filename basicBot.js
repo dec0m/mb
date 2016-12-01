@@ -3509,7 +3509,7 @@
                 }
             },
             
-               lokiCommand: {
+              lokiCommand: {
               command: 'loki',
               rank: 'user',
               type: 'startsWith',
@@ -3589,7 +3589,6 @@
                           } else {
                             if (API.getWaitListPosition(id) != djlist.length - 1)
                             API.moderateRemoveDJ(id);
-                            API.moderateForceSkip(id);
                             API.sendChat(subChat(basicBot.chat.lokiNotWorthy, {name: from}));
                           }
                         }
