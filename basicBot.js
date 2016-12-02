@@ -3497,7 +3497,7 @@
 
                           if (worthy) {
                             if (API.getWaitListPosition(userR.id) != 0)
-                            basicBot.userUtilities.moveUser(userR, djlist.length, false);
+                            basicBot.userUtilities.moveUser(userR.id, djlist.length, false);
                             API.sendChat(subChat(basicBot.chat.odinWorthy, {name: from}));
                           } else {
                             if (API.getWaitListPosition(id) != djlist.length - 1)
